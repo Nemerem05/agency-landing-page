@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --blue: hsl(228, 45%, 44%);
+}
+body, html {
+    background: var(--White);
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 700;
+    scroll-behavior: smooth;
+    font-family: 'Barlow', sans-serif;
+}
+.nav {
+    padding-left: 22px; 
+    padding-right: 22px;
+    color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 92px;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+nav .hidden-bar {
+    display: none;
+}
+nav .visible-nav-links {
+    display: flex;
+    gap: 16px;
+}
+.visible-nav-links li {
+    list-style-type: none;
+}
+.visible-nav-links a {
+    text-decoration: none;
+    color: var(--White);
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: black;
+}
+.visible-nav-links button {
+    background: var(--White);
+    color: var(--Dark-blue);
+    padding:  5px 18px;
+    border-radius: 20px;
+    border: 1px solid var(--White);
+}
+button:hover {
+    color: brown;
+}
+header {
+    background-image: url(/agency2/assets/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.hero-section {
+    text-align: center;
+    color: var(--White);
+    text-transform: uppercase;
+}
+.hero-section h1 {
+    font-size: 64px;
+    margin-bottom: 120px;
+}
+.hero-section i {
+    margin-bottom: 334px;
+}
+.section {
+    text-align: center;
+}
+.section h2 {
+    margin-top: 140px;
+    margin-bottom: 40px;
+    font-size: 64px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 900;
+}
+.section .description {
+    color: var(--Dark-desaturated-cyan);
+    font-size: 18px;
+    margin-bottom: 30px;
+} 
+.transform-section {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+.section a {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 900;
+}
+.stand-out-section {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+.graphic-design-section .graphic-section-child-1 {
+    background-image: url(/agency2/assets/image-graphic-design.jpg);
+    background-size: cover;
+}
+.graphic-design-section .graphic-section-child-2 {
+    background-image: url(/agency2/assets/image-photography.jpg);
+    background-size: cover;
+}
+.graphic-design-section {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+.graphic-design-section h2 {
+    margin-top: 500px;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+.graphic-design-section .graphic-section-child-2 p {
+    color: var(--Very-dark-desaturated-blue);
+}
+.testimonial-section .testimonial-title {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--Grayish-blue);
+}
+.testimonial-section .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+.testimonial-section .testimonial-container .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.testimonial-section .testimonial-container .testimonial-description {
+    font-size: 18px;
+    margin-top: 30px;
+    color: var(--Dark-moderate-cyan);
+    font-weight: 600;
+}
+.testimonial-section .testimonial-container .testimonial .author {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: var(--Very-dark-desaturated-blue);
+}
+.testimonial-section .testimonial-container .testimonial .author-title {
+    color: var(--Very-dark-grayish-blue);
+}
+.bottom-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+}
+.bottom-images .image-wrapper img {
+    width: 100%;
+}
+footer {
+    background: var(--Dark-moderate-cyan);
+    text-align: center;
+}
+footer p {
+    color: var(--Dark-desaturated-cyan);
+    margin-bottom: 20px;
+    font-size: 28px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+footer li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--Dark-desaturated-cyan);
+}
+footer i {
+    margin-right: 20px;
+    color: var(--Dark-desaturated-cyan);
+}
+@media only screen and (max-width:768px) {
+    nav .visible-nav-links {
+        display: none;
+    }
+    nav .hidden-bar {
+        display: block;
+    }
+    .hero-section h1 {
+        font-size: 48px;
+        margin-bottom: 120px;
+    }
+    .transform-section {
+        display: block;
+    }
+    .section h2 {
+        margin-top: 34px;
+        margin-bottom: 40px;
+        padding: 24px;
+        font-size: 48px;
+        color: var(--Very-dark-desaturated-blue);
+        font-weight: 900;
+    }
+    .stand-out-section {
+        display: block;
+    }
+    .graphic-design-section {
+        display: block;
+    }
+    .graphic-design-section h2 {
+        margin-top: 0;
+        color: var(--Very-dark-desaturated-blue);
+        font-weight: 700;
+    }
+    .section {
+        text-align: center;
+    }
+    .section .description {
+        color: var(--Dark-desaturated-cyan);
+        font-size: 18px;
+        margin-bottom: 0;
+        padding: 20px;
+    } 
+    .testimonial-section .testimonial-container {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: center;
+    }
+    body, html {
+        background: var(--White);
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 700;
+        scroll-behavior: smooth;
+        font-family: 'Barlow', sans-serif;
+        overflow-x: hidden;
+    }
+    .bottom-images {
+        display: block;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 100px;
+    }
+    footer p {
+        color: var(--Dark-desaturated-cyan);
+        margin-bottom: 20px;
+        font-size: 28px;
+        padding-top: 20px;
+        font-weight: 900;
+    }
+}
