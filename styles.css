@@ -69,7 +69,7 @@ button:hover {
     color: brown;
 }
 header {
-    background-image: url(/agency2/assets/image-header.jpg);
+    background-image: url(./assets/image-header.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -113,11 +113,11 @@ header {
     grid-template-columns: 5fr 5fr;
 }
 .graphic-design-section .graphic-section-child-1 {
-    background-image: url(/agency2/assets/image-graphic-design.jpg);
+    background-image: url(./assets/image-graphic-design.jpg);
     background-size: cover;
 }
 .graphic-design-section .graphic-section-child-2 {
-    background-image: url(/agency2/assets/image-photography.jpg);
+    background-image: url(./assets/image-photography.jpg);
     background-size: cover;
 }
 .graphic-design-section {
